@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.um.mydemo.ProfileActivity">
+    tools:context="com.tal.abctime.ProfileActivity">
 
     <TextView
         android:id="@+id/tv_title"
@@ -154,10 +154,13 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.42" />
 
-    <ImageButton
+    <com.tal.abctime.view.CircleImageView
         android:id="@+id/imageButton_profile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/hugh"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/transparent"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -165,8 +168,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher_round" />
+        app:layout_constraintTop_toTopOf="parent"/>
+
 
     <ImageButton
         android:id="@+id/imageButton_back"

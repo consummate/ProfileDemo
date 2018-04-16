@@ -6,7 +6,7 @@ android {
 
 
     defaultConfig {
-        applicationId "com.um.mydemo"
+        applicationId "com.tal.abctime"
         minSdkVersion 24
         targetSdkVersion 26
         versionCode 1
@@ -32,11 +32,23 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'
     compile 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    compile 'com.android.support:cardview-v7:26.1.0'
+    compile 'com.android.support:design:26.1.0'
 
-
+    compile 'org.greenrobot:greendao:3.2.2' // add library
+    compile 'org.greenrobot:greendao-generator:3.2.2'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
 }
+
+//greendao {
+//    //数据库的schema版本，也可以理解为数据库版本号
+//    schemaVersion 1
+//    //设置DaoMaster、DaoSession、Dao包名，也就是要放置这些类的包的全路径。
+//    daoPackage 'com.tal.abctime.dao'
+//    //设置DaoMaster、DaoSession、Dao目录
+//    targetGenDir 'src/main/java'
+//}
