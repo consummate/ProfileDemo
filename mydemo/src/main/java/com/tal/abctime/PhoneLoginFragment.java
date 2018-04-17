@@ -1,6 +1,7 @@
 package com.tal.abctime;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.annotation.Nullable;
@@ -121,7 +122,7 @@ public class PhoneLoginFragment extends android.support.v4.app.Fragment {
         isVerifyOvertime = false;
         setOvertimeHintVisible(false);
         Toast.makeText(mContext, "sendVerify", Toast.LENGTH_SHORT).show();
-        new CountDownTimer(10*1000, 1000) {
+        new CountDownTimer(60*1000, 1000) {
             @Override
             public void onTick(long millisUntilFinished) {
                 setVerifyBtnState(COUNT, millisUntilFinished/1000+" s");
@@ -155,7 +156,8 @@ public class PhoneLoginFragment extends android.support.v4.app.Fragment {
     //TODO: skip
     @OnClick(R.id.btn_bp_skip)
     void skip() {
-
+        Intent intent = new Intent(getActivity(), WelcomeActivity.class);
+        startActivity(intent);
     }
 
     void checkSubmitBtnState() {
