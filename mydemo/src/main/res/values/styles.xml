@@ -14,9 +14,12 @@
     <style name="BaseAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
     </style>
 
-    <style name="MButtonStyle" parent="Base.Widget.AppCompat.Button.Borderless">
+    <style name="AppTheme.Button.Borderless" parent="Base.Widget.AppCompat.Button.Borderless">
         <item name="android:textColor">@color/colorPrimaryButtonText</item>
         <item name="android:textSize">16sp</item>
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
     </style>
 
     <style name="dialog_animal"
@@ -25,6 +28,70 @@
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="AppTheme.TextView.Info" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorInfoText</item>
+    </style>
+
+    <style name="AppTheme.TextView.Title" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorInfoTitleText</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="AppTheme.RadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorRadioBtnText</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="AppTheme.RadioButton.Box" parent="AppTheme.RadioButton">
+        <item name="android:background">@drawable/radiobtn_age_bg</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:textColor">@color/radiobtn_text_color</item>
+    </style>
+
+    <style name="AppTheme.RadioButton.Switch" parent="AppTheme.RadioButton">
+        <item name="android:background">@null</item>
+        <item name="android:drawableLeft">@drawable/radiobtn_normal_bg</item>
+        <item name="android:drawablePadding">@dimen/information_radio_margin</item>
+
+    </style>
+
+    <style name="AppTheme.EditText.Noline" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:background">@null</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="AppTheme.Button" parent="Base.Widget.AppCompat.Button">
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+    </style>
+
+    <style name="AppTheme.Button.Normal" parent="AppTheme.Button">
+        <item name="android:background">@drawable/btn_bg_selected</item>
+        <item name="android:textColor">@color/colorBtnText</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+    <style name="AppTheme.Button.Verify" parent="AppTheme.Button">
+        <item name="android:background">@drawable/btn_verify_bg_selected</item>
+        <item name="android:textColor">@color/colorBtnText</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
     </style>
 
 </resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tal.abctime.LoginActivity">>
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_title"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="16dp"-->
+        <!--android:layout_marginTop="24dp"-->
+        <!--style="@style/AppTheme.TextView.Title"-->
+        <!--android:text="登陆注册"-->
+        <!--android:textSize="20sp"-->
+        <!--app:layout_constraintStart_toEndOf="@+id/login_btn_back"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+
+    <ImageView
+        android:id="@+id/loginImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="81dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/login_img_frog" />
+
+    <ImageButton
+        android:id="@+id/login_btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/nav_btn_back"
+        app:layout_constraintEnd_toStartOf="@+id/tv_title"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/login_btn_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:text="跳过"
+        android:textSize="16sp"
+        style="@style/AppTheme.Button.Borderless"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageButton
+        android:id="@+id/login_btn_wechat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/login_btn_wechat"
+        app:layout_constraintEnd_toEndOf="@+id/loginImage"
+        app:layout_constraintStart_toStartOf="@+id/loginImage"
+        app:layout_constraintTop_toBottomOf="@+id/loginImage" />
+
+    <Button
+        android:id="@+id/btn_phone"
+        style="@style/AppTheme.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="手机号登录/注册"
+        app:layout_constraintEnd_toEndOf="@+id/login_btn_wechat"
+        app:layout_constraintStart_toStartOf="@+id/login_btn_wechat"
+        app:layout_constraintTop_toBottomOf="@+id/login_btn_wechat" />
+
+
+</android.support.constraint.ConstraintLayout>

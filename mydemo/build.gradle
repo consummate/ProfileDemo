@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
 
 android {
     compileSdkVersion 26
@@ -25,6 +26,15 @@ android {
 
 }
 
+//greendao {
+//    //数据库的schema版本，也可以理解为数据库版本号
+//    schemaVersion 1
+//    //设置DaoMaster、DaoSession、Dao包名，也就是要放置这些类的包的全路径。
+//    daoPackage 'com.tal.abctime.dao'
+//    //设置DaoMaster、DaoSession、Dao目录
+//    targetGenDir 'src/main/java'
+//}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
@@ -35,8 +45,8 @@ dependencies {
     compile 'com.android.support:cardview-v7:26.1.0'
     compile 'com.android.support:design:26.1.0'
 
-    compile 'org.greenrobot:greendao:3.2.2' // add library
-    compile 'org.greenrobot:greendao-generator:3.2.2'
+//    compile 'org.greenrobot:greendao:3.2.2' // add library
+//    compile 'org.greenrobot:greendao-generator:3.2.2'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
@@ -44,11 +54,4 @@ dependencies {
 
 }
 
-//greendao {
-//    //数据库的schema版本，也可以理解为数据库版本号
-//    schemaVersion 1
-//    //设置DaoMaster、DaoSession、Dao包名，也就是要放置这些类的包的全路径。
-//    daoPackage 'com.tal.abctime.dao'
-//    //设置DaoMaster、DaoSession、Dao目录
-//    targetGenDir 'src/main/java'
-//}
+

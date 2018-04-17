@@ -1,4 +1,4 @@
-package com.um.mydemo;
+package com.tal.abctime;
 
 import android.os.Bundle;
 import android.support.annotation.LayoutRes;
@@ -6,9 +6,11 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 
-public abstract class SingleFragmentActivity extends AppCompatActivity {
+/**
+ * Created by irene on 2018/4/17.
+ */
 
-    protected abstract Fragment createFragment();
+public class PhoneLoginActivity extends AppCompatActivity {
 
     @LayoutRes
     protected int getLayoutResId() {
@@ -31,4 +33,7 @@ public abstract class SingleFragmentActivity extends AppCompatActivity {
         }
     }
 
+    protected Fragment createFragment() {
+        return PhoneLoginFragment.newInstance();
+    }
 }

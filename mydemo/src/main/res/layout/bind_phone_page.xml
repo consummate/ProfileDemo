@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tal.abctime.LoginActivity">
+
+
+    <ImageButton
+        android:id="@+id/btn_bp_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/nav_btn_back"
+        app:layout_constraintEnd_toStartOf="@+id/tv_title"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_bp_skip"
+        style="@style/AppTheme.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:text="跳过"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_bindphone_title"
+        style="@style/AppTheme.TextView.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="手机注册"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_bindphone_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_bindphone_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="绑定手机号，保存宝宝学习记录哦"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_bindphone_phone"
+        app:layout_constraintEnd_toEndOf="@+id/tv_bindphone_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_bindphone_title" />
+
+    <TextView
+        android:id="@+id/tv_bindphone_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="请输入11位手机号码"
+        android:textColor="#cccccc"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/et_bindphone_phone"
+        app:layout_constraintStart_toStartOf="@+id/et_bindphone_phone" />
+
+    <com.tal.abctime.view.EditTextWithDel
+        android:id="@+id/et_bindphone_phone"
+        style="@style/AppTheme.EditText.Noline"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="174dp"
+        android:ems="10"
+        android:hint="@string/str_input_phone_number"
+        android:inputType="number"
+        android:maxLength="11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <View
+        android:id="@+id/divider_bindphone_phone"
+        android:layout_width="320dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/line_divider"
+        android:layerType="software"
+        app:layout_constraintStart_toStartOf="@+id/et_bindphone_phone"
+        app:layout_constraintTop_toBottomOf="@+id/et_bindphone_phone"></View>
+
+    <TextView
+        android:id="@+id/tv_bp_overtimehint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/str_input_verify_overtime"
+        android:textColor="#FF9500"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/et_bindphone_verify"
+        app:layout_constraintStart_toStartOf="@+id/et_bindphone_verify" />
+
+    <com.tal.abctime.view.EditTextWithDel
+        android:id="@+id/et_bindphone_verify"
+        style="@style/AppTheme.EditText.Noline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        app:del_visible="false"
+        android:hint="请输入4位验证码"
+        android:inputType="number"
+        android:maxLength="4"
+        app:layout_constraintStart_toStartOf="@+id/et_bindphone_phone"
+        app:layout_constraintTop_toBottomOf="@+id/et_bindphone_phone" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_bp_verify_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_delete_all"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_bp_send_verify"
+        app:layout_constraintEnd_toStartOf="@+id/btn_bp_send_verify"
+        app:layout_constraintTop_toTopOf="@+id/btn_bp_send_verify" />
+
+    <Button
+        android:id="@+id/btn_bp_send_verify"
+        style="@style/AppTheme.Button.Verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送验证码"
+        app:layout_constraintBottom_toBottomOf="@+id/et_bindphone_verify"
+        app:layout_constraintEnd_toEndOf="@+id/divider_bindphone_verify"
+        app:layout_constraintTop_toTopOf="@+id/et_bindphone_verify" />
+
+    <View
+        android:id="@+id/divider_bindphone_verify"
+        android:layout_width="325dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/line_divider"
+        android:layerType="software"
+        app:layout_constraintStart_toStartOf="@+id/et_bindphone_verify"
+        app:layout_constraintTop_toBottomOf="@+id/et_bindphone_verify"></View>
+
+
+    <Button
+        android:id="@+id/btn_bp_submit"
+        style="@style/AppTheme.Button.Normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="完成"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.48" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

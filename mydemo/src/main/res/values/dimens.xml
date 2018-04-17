@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="information_radio_margin">8dp</dimen>
+    <dimen name="information_radio_text_padding">8dp</dimen>
+    <dimen name="info_widget_margin">16dp</dimen>
+    <dimen name="info_radio_gender_margin_left">32dp</dimen>
+    <dimen name="edit_text_del_distant">221dp</dimen>
+</resources>

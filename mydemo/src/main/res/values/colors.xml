@@ -7,4 +7,17 @@
     <color name="dark">@android:color/black</color>
     <color name="colorText">#66000000</color>
     <color name="transparent">@android:color/transparent</color>
+
+    <color name="colorInfoText">#333333</color>
+    <color name="colorInfoTitleText">#333333</color>
+    <color name="colorRadioBtnText">#999999</color>
+    <color name="colorRadioBtnTextSelected">#FFFFFF</color>
+    <color name="colorDividerLine">#DBE0EB</color>
+
+    <color name="colorBtnBGEnabled">#966BFF</color>
+    <color name="colorBtnBGDisabled">#CCCCCC</color>
+    <color name="colorBtnVerifyBGInactive">#00CC88</color>
+    <color name="colorBtnVerifyBGReactive">#FF9500</color>
+    <color name="colorBtnVerifyBGDisabled">#EBEBEB</color>
+    <color name="colorBtnText">#FFFFFF</color>
 </resources>

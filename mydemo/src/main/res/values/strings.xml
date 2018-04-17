@@ -4,4 +4,13 @@
     <string name="pop_photo">拍照</string>
     <string name="pop_choose">从相册中选择</string>
     <string name="pop_close">取消</string>
+
+    <string name="info_name">昵称</string>
+    <string name="info_age">年龄</string>
+    <string name="info_gender">性别</string>
+    <string name="info_gender_boy">小王子</string>
+    <string name="info_gender_girl">小公主</string>
+    <string name="babyinfo_settings_title">设置宝宝信息获取适合宝宝年龄的课程</string>
+    <string name="str_input_verify_overtime">输入超时</string>
+    <string name="str_input_phone_number">请输入11位手机号码</string>
 </resources>

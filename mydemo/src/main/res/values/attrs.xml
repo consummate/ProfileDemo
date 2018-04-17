@@ -6,4 +6,9 @@
         <attr name="civ_border_overlay" format="boolean" />
         <attr name="civ_circle_background_color" format="color" />
     </declare-styleable>
+    <declare-styleable name="EditTextWithDel">
+        <attr name="del_visible" format="boolean" />
+    </declare-styleable>
+
+
 </resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.tal.abctime.view.CircleImageView
+        android:id="@+id/imageButton_profile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/login_img_babyphoto"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/transparent" />
+
+    <ImageButton
+        android:id="@+id/imageButton_takephoto"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/login_btn_takephoto"
+        android:layout_gravity="end|bottom" />
+
+</FrameLayout>
